@@ -11,13 +11,13 @@ dotenv.config();
 // Connect to database
 connectDB();
 
-const PORT = process.env.PORT || 8080;
+const PORT = process.env.PORT || 3000;
 const app = express();
 
 // CORS middleware
 app.use(
     cors({
-        origin: "http://localhost:5173",
+        origin: "http://localhost:5173", // Vite frontend
         credentials: true
     })
 );
